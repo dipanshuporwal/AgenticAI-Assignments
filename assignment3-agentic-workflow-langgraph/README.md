@@ -22,7 +22,7 @@ This project is an intelligent Question Answering (QA) system built using **Lang
 
 ## 🧱 Architecture
 
-```mermaid
+- mermaid
 graph TD
     A[Supervisor Node] -->|Mental Health| B[RAG Node]
     A -->|Real Time Info| C[Web Search Node]
