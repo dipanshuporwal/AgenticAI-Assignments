@@ -33,76 +33,61 @@ graph TD
     E -->|Retry| A
     E -->|Valid| F[Final Node]
 
-✅ Requirements
-Python 3.9+
+## ✅ Requirements
+-Python 3.9+
 
-Streamlit
+-Streamlit
 
-LangChain
+-LangChain
 
-LangGraph
+-LangGraph
 
-dotenv
+-dotenv
 
-Tavily API Key (for web search)
+-Tavily API Key (for web search)
 
-Google Generative AI access (for Gemini)
+-Google Generative AI access (for Gemini)
 
-HuggingFace Transformers
+-HuggingFace Transformers
 
 
-📦 Installation
-Clone the repo:
+## 📦 Installation
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/langgraph-qa-assistant.git
-cd langgraph-qa-assistant
-Create virtual environment:
+- Clone the repo:
+  - git clone https://github.com/yourusername/langgraph-qa-assistant.git
+  - cd langgraph-qa-assistant
 
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
-Install dependencies:
+- Create virtual environment:
+  - python -m venv venv
+  - source venv/bin/activate   # On Windows: venv\Scripts\activate
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Setup environment variables:
+- Install dependencies:
+  - pip install -r requirements.txt
 
-Create a .env file and add:
+- Setup environment variables:
+  - Create a .env file and add:
+    - GOOGLE_API_KEY=your_google_api_key
+    - TAVILY_API_KEY=your_tavily_api_key
 
-ini
-Copy
-Edit
-GOOGLE_API_KEY=your_google_api_key
-TAVILY_API_KEY=your_tavily_api_key
-▶️ Running the App
-bash
-Copy
-Edit
-streamlit run app.py
+## ▶️ Running the App
+- streamlit run app.py
 Then open your browser to http://localhost:8501.
 
-📚 How It Works
-User enters a question.
+## 📚 How It Works
+- User enters a question.
 
-Supervisor Node classifies the query.
+-Supervisor Node classifies the query.
 
-Depending on the classification:
+-Depending on the classification:
 
-RAG Node pulls data from local PDFs.
+-RAG Node pulls data from local PDFs.
 
-Web Node uses Tavily for real-time info.
+-Web Node uses Tavily for real-time info.
 
-LLM Node answers using Gemini's own knowledge.
+-LLM Node answers using Gemini's own knowledge.
 
-Validator Node checks the answer's quality.
+-Validator Node checks the answer's quality.
 
-If the answer is valid, it is shown to the user.
+-If the answer is valid, it is shown to the user.
 
-If not, the flow retries via the Supervisor.
+-If not, the flow retries via the Supervisor.
