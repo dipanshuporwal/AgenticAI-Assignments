@@ -34,21 +34,21 @@ graph TD
     E -->|Valid| F[Final Node]
 
 ## ✅ Requirements
--Python 3.9+
+- Python 3.9+
 
--Streamlit
+- Streamlit
 
--LangChain
+- LangChain
 
--LangGraph
+- LangGraph
 
--dotenv
+- dotenv
 
--Tavily API Key (for web search)
+- Tavily API Key (for web search)
 
--Google Generative AI access (for Gemini)
+- Google Generative AI access (for Gemini)
 
--HuggingFace Transformers
+- HuggingFace Transformers
 
 
 ## 📦 Installation
@@ -76,18 +76,18 @@ Then open your browser to http://localhost:8501.
 ## 📚 How It Works
 - User enters a question.
 
--Supervisor Node classifies the query.
+- Supervisor Node classifies the query.
 
--Depending on the classification:
+- Depending on the classification:
 
--RAG Node pulls data from local PDFs.
+- RAG Node pulls data from local PDFs.
 
--Web Node uses Tavily for real-time info.
+- Web Node uses Tavily for real-time info.
 
--LLM Node answers using Gemini's own knowledge.
+- LLM Node answers using Gemini's own knowledge.
 
--Validator Node checks the answer's quality.
+- Validator Node checks the answer's quality.
 
--If the answer is valid, it is shown to the user.
+- If the answer is valid, it is shown to the user.
 
--If not, the flow retries via the Supervisor.
+- If not, the flow retries via the Supervisor.
