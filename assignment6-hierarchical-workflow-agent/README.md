@@ -30,8 +30,23 @@ This is orchestrated as a stateful LangGraph with branching logic using conditio
 
 ### 1. Clone the Repository
 
-```bash
 git clone https://github.com/yourusername/hierarchical-workflow-agent.git
 cd hierarchical-workflow-agent
 
+### 2. Set Up a Virtual Environment (Optional but Recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+### 3. Install Dependencies
+pip install -r requirements.txt
+
+### 4. Set Up Environment Variables
+GOOGLE_API_KEY=your_google_genai_api_key
+
+### 5. 🧪 Running the App
 python main.py
+
+
+## Example query:
+1. What are the latest treatments for type 2 diabetes?
+2. Can you analyze how Tesla's stock has performed over the past 6 months and provide a summary of key financial events that may have influenced it?
