@@ -1,0 +1,15 @@
+# Core LangChain & LangGraph
+langchain>=0.1.20
+langgraph>=0.0.38
+
+# LLMs 
+langchain_google_genai #
+
+# Document saving
+docx>=0.2.4 
+
+# Environment loading 
+python-dotenv>=1.0.1
+
+# If using Jupyter notebooks or visualizing
+IPython>=8.24.0
